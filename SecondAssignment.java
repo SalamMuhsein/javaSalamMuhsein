@@ -1,17 +1,30 @@
 import java.util.Scanner;
 
     
-class SecondAssignment{
-public static void main(String[] args) {
-    Scanner cars = new Scanner(System.in);
-    System.out.println("Car 1: Proton X50, Price:?");
-    int car1 = cars.nextInt();
-    System.out.println("Car 2: Proton X90, Price:?");
-    int car2 = cars.nextInt();
-    System.out.println("Car 3: Proton X70, Price:?");
-    int car3 = cars.nextInt();
+public class SecondAssignment{
+    private String carmodel;
+    private String carbrand;
+    private double carprice;
 
-    System.out.println("Average car price :" + (car1+car2+car3)/3);
+public SecondAssignment(){
+
+    Scanner cars = new Scanner(System.in);
+    
+    System.out.println("Please put your car");
+    String carmodel = cars.nextLine();
+    System.out.println("Please put your car brand");
+    String carbrand = cars.nextLine();
+    System.out.println("Price:?");
+    double carprice = cars.nextDouble();
+    }
+
+    public static void main(String[] args) {
+        SecondAssignment firstcar = new SecondAssignment();
+        SecondAssignment secondcar = new SecondAssignment();
+        SecondAssignment thirdcar = new SecondAssignment();
+        double avgcarprice = (firstcar.carprice + secondcar.carprice + thirdcar.carprice)/3;
+        System.out.println("the average car price is RM " +avgcarprice);
     }
 }
+
 
