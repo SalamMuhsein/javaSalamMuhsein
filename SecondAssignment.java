@@ -2,7 +2,7 @@ import java.util.Scanner;
 
     
 class SecondAssignment{
-    public static void main(String[] args) {
+public static void main(String[] args) {
     Scanner cars = new Scanner(System.in);
     System.out.println("Car 1: Proton X50, Price:?");
     int car1 = cars.nextInt();
