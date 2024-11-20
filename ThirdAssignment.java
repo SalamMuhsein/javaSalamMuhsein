@@ -1,4 +1,3 @@
-import java.time.chrono.ThaiBuddhistChronology;
 import java.util.Scanner;
 
 public class ThirdAssignment{
